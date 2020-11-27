@@ -30,6 +30,14 @@ $p="";
 if(isset($_GET["p"])&&!empty($_GET["p"])){
 	$p=$_GET["p"];
 }
+$formTable="";
+if(isset($_GET["formTable"])&&!empty($_GET["formTable"])){
+	$formTable=$_GET["formTable"];
+}
+$status="";
+if(isset($_GET["status"])&&!empty($_GET["status"])){
+	$status=$_GET["status"];
+}
 $form="";
 if(isset($_POST["form"])&&!empty($_POST["form"])){
 	$form=$_POST["form"];

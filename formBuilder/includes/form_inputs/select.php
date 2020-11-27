@@ -1,6 +1,10 @@
 <?php
 $COLUMN_LNAME=$COLUMN_NAME;
+$colValue="";
 if($row["label"]<>""){ $COLUMN_LNAME = $row["label"]; }
+if($cate=="edit"&&$row2[$COLUMN_NAME]<>""){
+	$colValue = $row2[$COLUMN_NAME];
+}
 ?>
 <div class="form-group">
 	<label for="<?=$COLUMN_NAME?>"><?=$COLUMN_LNAME?> <?php if($row["required"]==0){ ?>*<?php }else{ echo "(Optional)"; } ?>:</label>
@@ -14,7 +18,7 @@ if($row["label"]<>""){ $COLUMN_LNAME = $row["label"]; }
 			$result2 = mysqli_query($con, $query2);
 			while($row2 = mysqli_fetch_array($result2)){ 
 			?>
-			<option value="<?=$row2["name"]?>"><?=$row2["name"]?></option>
+			<option value="<?=$row2["name"]?>"<?php if($colValue==$row2["name"]){ ?> selected="selected"<?php } ?>><?=$row2["name"]?></option>
 			<?php } ?>
 		<?php } ?>
 		<?php
@@ -23,7 +27,7 @@ if($row["label"]<>""){ $COLUMN_LNAME = $row["label"]; }
 		$result2 = mysqli_query($con, $query2);
 		while($row2 = mysqli_fetch_array($result2)){ 
 		?>
-			<option value="<?=$row2["name"]?>"><?=$row2["name"]?></option>
+			<option value="<?=$row2["name"]?>"<?php if($colValue==$row2["name"]){ ?> selected="selected"<?php } ?>><?=$row2["name"]?></option>
 		<?php } ?>
 	</select>
 	<?php if($row["short_desc"]<>""){ ?>

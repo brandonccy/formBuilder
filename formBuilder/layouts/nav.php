@@ -20,6 +20,9 @@
           <?php $btnStyle="";$textStyle="";if($page=="create"){ $btnStyle="active";$textStyle="color: #c7703a;"; } ?>
           <li class="<?=$btnStyle?>"><a href="?page=create" style="<?=$textStyle?>"><i class="fa fa-plus"></i> Create 建立</a></li>
 
+          <?php $btnStyle="";$textStyle="";if($page=="list"){ $btnStyle="active";$textStyle="color: #c7703a;"; } ?>
+          <li class="<?=$btnStyle?>"><a href="?page=list" style="<?=$textStyle?>"><i class="fa fa-list"></i> List 列單</a></li>
+
           <?php $btnStyle="";$textStyle="";if($page=="profile"){ $btnStyle="active";$textStyle="color: #c7703a;"; } ?>
           <li class="<?=$btnStyle?>"><a href="?page=profile" style="<?=$textStyle?>"><i class="fa fa-user"></i> Profile 賬號</a></li>
 

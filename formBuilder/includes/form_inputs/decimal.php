@@ -1,6 +1,10 @@
 <?php
+$colValue="";
 $COLUMN_LNAME=$COLUMN_NAME;
 if($row["label"]<>""){ $COLUMN_LNAME = $row["label"]; }
+if($cate=="edit"&&$row2[$COLUMN_NAME]<>""){
+	$colValue = $row2[$COLUMN_NAME];
+}
 ?>
 <div class="form-group">
 	<label for="<?=$COLUMN_NAME?>"><?=$COLUMN_LNAME?> <?php if($row["required"]==0){ ?>*<?php }else{ echo "(Optional)"; } ?>:</label>

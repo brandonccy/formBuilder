@@ -1,6 +1,9 @@
 <?php
 $colValue="";
 if($COLUMN_NAME=="u_date"||$COLUMN_NAME=="date"){ $colValue=$Today; }
+if($cate=="edit"&&$row2[$COLUMN_NAME]<>""){
+	$colValue = $row2[$COLUMN_NAME];
+}
 ?>
 <?php
 $COLUMN_LNAME=$COLUMN_NAME;

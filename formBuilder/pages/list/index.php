@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="container">
 		<form method="get" action="">
-			<input type="hidden" name="page" value="form">
+			<input type="hidden" name="page" value="table">
 			Select a table to start
 			<select name="formTable" onchange="form.submit()" class="form-control" required="required">
 				<option value="">Please select</option>
