@@ -10,7 +10,12 @@ This version of formBuilder can easily build modules for WebbyCMS PHP framework 
 
 3) Access your localhost, you should see a Bootstrap Hello World Page
 
-4) Enjoy Coding!
+4) Please check the file "schema.sql" in root and import to for samplse
+- * Login details for sample: 
+Superadmin User role: username: brandonccy1982 password: #abcd1234#
+Normal User role: username: phototix password: #abcd1234#
+
+5) Check table "db_forms" for basic sample of user's password update.
 
 Developer Skill: PHP, mySQL Improved, HTML and CSS Bootstrap, Javascripts
 
