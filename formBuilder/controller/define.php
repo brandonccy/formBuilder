@@ -34,6 +34,10 @@ $formTable="";
 if(isset($_GET["formTable"])&&!empty($_GET["formTable"])){
 	$formTable=$_GET["formTable"];
 }
+$filterBy="";
+if(isset($_GET["filterBy"])&&!empty($_GET["filterBy"])){
+	$filterBy=$_GET["filterBy"];
+}
 $status="";
 if(isset($_GET["status"])&&!empty($_GET["status"])){
 	$status=$_GET["status"];

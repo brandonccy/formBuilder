@@ -4,6 +4,9 @@ if($COLUMN_NAME=="time"||$COLUMN_NAME=="u_time"){ $colValue=$Time; }
 if($cate=="edit"&&$row2[$COLUMN_NAME]<>""){
 	$colValue = $row2[$COLUMN_NAME];
 }
+if($_GET[$COLUMN_NAME]<>""){
+	$colValue = $_GET[$COLUMN_NAME];
+}
 ?>
 <?php
 $COLUMN_LNAME=$COLUMN_NAME;
